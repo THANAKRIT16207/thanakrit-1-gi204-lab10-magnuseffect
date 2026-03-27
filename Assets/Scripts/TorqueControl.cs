@@ -15,7 +15,7 @@ public class TorqueControl : MonoBehaviour
     {
         if (Keyboard.current.dKey.isPressed)
         {
-            _rb.AddTorque(0,torquePower,0);
+            _rb.AddTorque(Vector3.forward * torquePower);
         }
     }
 }
